@@ -11,3 +11,18 @@
 // Exemple : si la moyenne du candidat est de 11, le programme devrait afficher "Le candidat est reçu."
 
 // N'oubliez pas de tester votre programme avec différentes moyennes pour couvrir tous les cas de figure.
+
+// 1.
+const average = 9;
+
+if(average>10){
+    if(average>12){
+        console.log(`La moyenne du candidat est ${average} -> il est donc reçu avec mention`);
+    }
+    else{
+        console.log(`La moyenne du candidat est ${average} -> il est donc reçu`);
+    }
+}
+else{
+    console.log(`La moyenne du candidat est ${average} -> il est donc recalé`);
+}

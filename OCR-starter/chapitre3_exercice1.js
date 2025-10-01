@@ -17,3 +17,52 @@
 // Exemple : si le jour actuel est "mardi", le programme devrait afficher "Demain, nous serons mercredi."
 
 // N'oubliez pas de tester votre programme avec divers jours de la semaine.
+
+// 1.
+const today = 'Dimanche';
+const tomorrow=null;
+// 2.
+
+if(today !== 'Lundi'){
+    if(today !== 'Mardi'){
+        if(today !== 'Mercredi'){
+            if(today!=='Jeudi'){
+                if(today!=='Vendredi'){
+                    if(today!=='Samedi'){
+                        if(today!=='Dimanche'){
+                            console.log('Erreur : jour non reconnu')
+                        }
+                        else{
+                            const tomorrow= 'Lundi';
+                            console.log(`Demain on est ${tomorrow}`);
+                        }
+                    }
+                    else{
+                        const tomorrow= 'Dimanche';
+                        console.log(`Demain on est ${tomorrow}`);
+                    }
+                }
+                else{
+                    const tomorrow= 'Samedi';
+                    console.log(`Demain on est ${tomorrow}`);
+                }
+            }
+            else{
+                const tomorrow= 'Vendredi';
+                console.log(`Demain on est ${tomorrow}`);
+            }
+        }
+        else{
+            const tomorrow= 'Jeudi';
+            console.log(`Demain on est ${tomorrow}`);
+        }
+    }
+    else{
+        const tomorrow ='Mercredi';
+        console.log(`Demain on est ${tomorrow}`);
+    }
+}
+else{
+        const tomorrow = 'Mardi';
+        console.log(`Demain on est ${tomorrow}`);
+    }
