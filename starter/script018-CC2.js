@@ -21,6 +21,41 @@ alors que l'équipe de Mike a marqué 116, 94 et 123 points.
 BONNE CHANCE 😀
 */
 
+let scoreJohn= 89 + 120 + 103 ;
+let scoreMike = 116 + 94 + 123;
+let moyJohn= scoreJohn/3
+let moyMike=scoreMike/3;
+
+if(moyJohn<moyMike)
+{
+    console.log("L'équipe de Mike a gagné avec une moyenne de " + moyMike)
+}
+else
+{
+    console.log("L'équipe de John a gagné avec une moyenne de " + moyMike)
+}
+
+scoreJohn = 119 + 119 + 119;
+scoreMike = 119 + 119 + 119;
+moyJohn= scoreJohn/3;
+moyMike=scoreMike/3;
+
+
+if(moyJohn<moyMike)
+{
+    console.log("L'équipe de Mike a gagné avec une moyenne de " + moyMike)
+}
+else
+{
+    if (moyMike<moyJohn)
+    {
+        console.log("L'équipe de John a gagné avec une moyenne de " + moyMike)
+    }
+    else
+    {
+        console.log("Les 2 équipes sont a égalités");
+    }
+}
 // sans bonus
 
 // 1. Calculez le score moyen de chaque équipe.
