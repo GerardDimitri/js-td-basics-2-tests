@@ -21,7 +21,7 @@ console.log(false && false); // false
 
 // 1. Demandez à l'utilisateur d'entrer un nombre et stockez-le dans une variable nombre
 // 2. Testez si le nombre est dans l'intervalle [0, 100]. Autrement dit, testez si 0 <= nombre <= 100. Si c'est le cas, affichez "… est compris entre 0 et 100".
-let nbr=Number(prompt("Entrez un nombre"));
+let nbr=parseInt(prompt("Entrez un nombre"));
 
 if(nbr >= 0 && nbr <= 100){
     console.log(`${nbr} est est compris entre [0, 100]`);
@@ -38,7 +38,7 @@ console.log(false || false); // false
 
 // 1. Demandez à l'utilisateur d'entrer un nombre et stockez-le dans une variable nombre
 // 2. Testez si le nombre est en dehors de l'intervalle [0, 100]. Si c'est le cas, affichez "… est en dehors de l'intervalle [0, 100]".
-let number=Number(prompt("Entrez un nombre"));
+let number=parseInt(prompt("Entrez un nombre"));
 if(number < 0 || number > 100){
     console.log(`${number} est en dehors de l'intervalle [0, 100]`);
 }
@@ -51,7 +51,7 @@ console.log(!false);  // true
 
 // 1. Demandez à l'utilisateur d'entrer un nombre et stockez-le dans une variable nombre
 // 2. Si ce nombre n'est pas supérieur à 100, affichez "… est inférieur ou égal à 100".
-let number2=Number(prompt("Entrez un nombre"));
+let number2=parseInt(prompt("Entrez un nombre"));
 if(!number2 < 100){
     console.log(`${number2} est inférieur ou égal à 100`)
 }
@@ -64,7 +64,7 @@ if(!number2 < 100){
 // 1°) s'il est négatif, affichez "… est négatif",
 // 2°) sinon, affichez "… est nul"
 
-let number3=Number(prompt("Entrez un nombre"));
+let number3=parseInt(prompt("Entrez un nombre"));
 
 if(number3 > 0){
     console.log(`${number3} est positif`);
@@ -81,7 +81,7 @@ if(number3 > 0){
 // BUT : réaliser le même test que l'exercice précédent mais avec l'écriture if / elseif / else
 // 1. Demandez à l'utilisateur d'entrer un nombre et stockez-le dans une variable nombre
 // 2. Affichez "… est positif", "… est négatif" ou "… est nul" selon le cas
-let number4 = Number(prompt("Entrez un nombre :"));
+let number4 = parseInt(prompt("Entrez un nombre :"));
 
 if (number4 > 0) {
     console.log(`${number4} est positif`);
